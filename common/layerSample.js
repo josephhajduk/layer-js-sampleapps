@@ -81,14 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
    */
   var div = document.createElement('div');
   div.innerHTML += '<img src="http://static.layer.com/logo-only-blue.png" />';
-  div.innerHTML += '<h1>Welcome to Layer sample app!</h1>';
+  //div.innerHTML += '<h1>Welcome to Layer sample app!</h1>';
 
-  div.innerHTML += '<p>2. Select a user to login as:</p>';
+  div.innerHTML += 'Select a user to login as:</p>';
 
-  for (var i = 0; i <= 5; i++) {
+  for (var i = 0; i <= 0; i++) {
     var checked = i === 0 ? 'checked' : '';
     div.innerHTML += '<label><input type="radio" name="user" value="' + i + '" ' + checked + '/>' +
-      'User ' + i + '</label>';
+      'Triage Nurse ' + i + '</label>';
   }
 
   errorDiv = document.createElement('div');
